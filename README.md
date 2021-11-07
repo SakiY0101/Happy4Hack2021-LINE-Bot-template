@@ -14,7 +14,7 @@ az login
    --query "[].id" \
    --output table
 
-az account set --subscription <your subscription id>
+az account set --subscription 208f0e61-8983-46ba-916c-cb0412aae9aa
 
 group_name=20211027HappyHackLineBot
 
@@ -24,9 +24,9 @@ az configure --defaults group=${group_name}
 
 ## https://1password.com/jp/password-generator/
 az deployment group create --name deployPrj01 --template-file main.bicep \
-  --parameters ramdom=<ramdom> \
-  --parameters secret=<secret> \
-  --parameters access=<access>
+  --parameters ramdom=iJtqJ9qgxgzXw2e88RNP \
+  --parameters secret=0db4791853e3fd582de47d536f4282b7\ \
+  --parameters access=aVPxyQC8gp8H17nOgJxgjhOlQT5Wg6xSeUjfMpC6Jf4HtEaSpgCpON/ZWhg18LwZEZPZuYukcJJ97UUUxH1/lAOPPjwwKCUHVMlyTgKxw3OtlPFwdAAUm2oDEuB1mrM7EU4zf9ttLYsNBSQFzn56JwdB04t89/1O/w1cDnyilFU=
   
 az deployment group show \
   -g ${group_name} \
@@ -35,7 +35,9 @@ az deployment group show \
 
 cd deployPrj01
 npm i
-func azure functionapp publish <functionAppName> --build remote
+func azure functionapp publish fn-ijtqj9qgxgzxw2e88rnp --build remote
+
+https://fn-ijtqj9qgxgzxw2e88rnp.azurewebsites.net/api/linehttptriggeredfunction
 
 #az group delete --name ${group_name}
 ```
