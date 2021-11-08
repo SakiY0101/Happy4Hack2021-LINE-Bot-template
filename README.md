@@ -39,6 +39,19 @@ func azure functionapp publish fn-ijtqj9qgxgzxw2e88rnp --build remote
 
 https://fn-ijtqj9qgxgzxw2e88rnp.azurewebsites.net/api/linehttptriggeredfunction
 
+
+2回目以降
+az login
+cd deployPrj01
+func azure functionapp publish fn-ijtqj9qgxgzxw2e88rnp --build remote
+https://fn-ijtqj9qgxgzxw2e88rnp.azurewebsites.net/api/linehttptriggeredfunction
+
+
+
+
+
+
+
 #az group delete --name ${group_name}
 ```
 
