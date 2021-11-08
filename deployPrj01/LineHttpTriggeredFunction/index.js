@@ -74,7 +74,7 @@ async function handleEvent(event) {
                 "type":"postback",
                 "label":"Yes",
                 "data": "sticker",
-                "displayText":"ステッカーおくれ❗️"
+                "displayText":"ステッカーほしいな❗️"
               }
             },
             {
